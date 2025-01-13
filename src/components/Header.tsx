@@ -40,14 +40,14 @@ const Header = () => {
 
     <div className={`${
       isMenuOpen ? 'block' : 'hidden'
-    } absolute top-0 left-0 w-full bg-blue-500 p-5 md:hidden z-20 `}>
+    } absolute top-0 left-0 w-full h-full bg-blue-500 p-5 md:hidden z-20 `}>
 
       <div className='flex justify-end'>
         <HiX className='text-white text-3xl cursor-pointer'
         onClick={toggleMenu}/>
 
       </div>
-      <nav className='hidden md:flex gap-10 text-white font-bold'>
+      <nav className='flex flex-row items-center gap-3 text-white font-bold'>
         <Link href="/" onClick={closeMenu}>Home</Link>
         <Link href="/about" onClick={closeMenu}>About</Link>
         <Link href="/watches" onClick={closeMenu}>Watches</Link>
